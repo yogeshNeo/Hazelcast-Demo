@@ -1,0 +1,20 @@
+server:
+  port: 8061
+
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/hazel
+    username: root
+    password: 12345
+  jpa:
+    hibernate:
+    ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+
+hazelcast:
+  network:
+    join:
+      multicast:
+        enabled: true
